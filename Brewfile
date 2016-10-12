@@ -7,6 +7,7 @@ install brew-cask
 cask install alfred
 cask install appcleaner
 cask install atom
+cask install docker
 cask install google-chrome
 cask install java
 cask install vagrant
@@ -18,6 +19,8 @@ cask install the-unarchiver
 cask install transmission
 cask install 1password
 cask install vlc
+cask install phpstorm
+cask install firefox
 
 ## homebrew/apache
 tap homebrew/apache
@@ -55,6 +58,7 @@ install jpeg
 install libpng
 install libtool
 install nkf
+install openssl
 install tree
 install mysql
 install openssl
