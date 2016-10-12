@@ -7,14 +7,17 @@ install brew-cask
 cask install alfred
 cask install appcleaner
 cask install atom
-cask install dropbox
-cask install evernote
 cask install google-chrome
 cask install java
-cask install libreoffice
 cask install vagrant
 cask install virtualbox
 cask install xquartz
+cask install skype
+cask install slack
+cask install the-unarchiver
+cask install transmission
+cask install 1password
+cask install vlc
 
 ## homebrew/apache
 tap homebrew/apache
@@ -28,6 +31,7 @@ install zlib
 tap homebrew/php
 install composer
 install php55-xdebug
+install php55-mcrypt
 install php55 --homebrew-apxs
 install phpmyadmin
 
@@ -45,29 +49,26 @@ install autoconf
 install freetype
 install gettext
 install git
+install micro
 install icu4c
 install jpeg
 install libpng
 install libtool
+install nkf
+install tree
 install mysql
 install openssl
 install pcre
 install unixodbc
 
 # App Store applications
-appstore 1Password
-appstore Day One
 appstore Keynote
-appstore Kobito
-appstore Monosnap
 appstore Numbers
 appstore Pages
+appstore Monosnap
 appstore Simplenote
-appstore The Unarchiver
 appstore Transmit
 appstore Twitter
 appstore VOX
-appstore Wunderlist
-appstore YoruFukurou
 appstore LINE
 
