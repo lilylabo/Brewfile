@@ -1,9 +1,5 @@
 
 # tap repositories and their packages
-
-## caskroom/cask
-tap caskroom/cask
-install brew-cask
 cask install alfred
 cask install appcleaner
 cask install atom
@@ -33,13 +29,15 @@ install zlib
 ## homebrew/php
 tap homebrew/php
 install composer
-install php55-xdebug
-install php55-mcrypt
-install php55 --homebrew-apxs
+install php56-xdebug
+install php56-mcrypt
+install php56 --homebrew-apxs
 install phpmyadmin
 
-## homebrew/versions
+## fomuras
 tap homebrew/versions
+tap homebrew/core
+tap homebrew/dupes
 
 ## rcmdnk/file
 tap rcmdnk/file
@@ -49,21 +47,46 @@ install brew-file
 install apr
 install apr-util
 install autoconf
+install c-ares
+install composer
 install freetype
 install gettext
 install git
-install micro
 install icu4c
 install jpeg
+install libffi
+install libgcrypt
+install libgpg-error
 install libpng
+install libtasn1
 install libtool
-install nkf
-install openssl
-install tree
+install libxml2
+install libyaml
+install mackup
+install mas
+install mcrypt
+install mhash
+install micro
 install mysql
+install nettle
+install nkf
+install node
 install openssl
 install pcre
+install php55
+install php55-intl
+install php55-mcrypt
+install php55-xdebug
+install phpmyadmin
+install pkg-config
+install putty
+install pyenv-virtualenv
+install python
+install readline
+install ruby
+install sqlite
 install unixodbc
+install xz
 
 # App Store applications
 appstore Keynote
