@@ -27,8 +27,7 @@ brew install mas
 #brew unlink php70
 
 # install from Brewfile
-brew file set_repo
-# input 'lilylabo/Brewfile'
+brew file set_repo -r lilylabo/Brewfile
 brew file install
 
 brew cleanup
