@@ -6,11 +6,8 @@ cask install atom
 cask install docker
 cask install google-chrome
 cask install java
-cask install vagrant
-cask install virtualbox
 cask install xquartz
 cask install skype
-cask install slack
 cask install the-unarchiver
 cask install transmission
 cask install 1password
@@ -73,11 +70,6 @@ install nkf
 install node
 install openssl
 install pcre
-install php55
-install php55-intl
-install php55-mcrypt
-install php55-xdebug
-install phpmyadmin
 install pkg-config
 install putty
 install pyenv-virtualenv
