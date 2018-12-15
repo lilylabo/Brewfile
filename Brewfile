@@ -1,93 +1,111 @@
+#!/usr/bin/env bash
+
+#BREWFILE_IGNORE
+if ! which brew >& /dev/null;then
+  brew_installed=0
+  echo Homebrew is not installed!
+  echo Install now...
+  echo ruby -e \"\$\(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install\)\"
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  echo
+fi
+#BREWFILE_ENDIGNORE
 
 # tap repositories and their packages
-cask install alfred
-cask install appcleaner
-cask install atom
-cask install docker
-cask install google-chrome
-cask install java
-cask install xquartz
-cask install skype
-cask install the-unarchiver
-cask install transmission
-cask install 1password
-cask install vlc
-cask install phpstorm
-cask install firefox
 
-## homebrew/apache
-tap homebrew/apache
-install httpd22
+brew tap homebrew/core
+brew install apr
+brew install apr-util
+brew install argon2
+brew install aspell
+brew install autoconf
+brew install boost
+brew install c-ares
+brew install composer
+brew install freetds
+brew install freetype
+brew install gdbm
+brew install gettext
+brew install glib
+brew install gmp
+brew install icu4c
+brew install jansson
+brew install jemalloc
+brew install jpeg
+brew install libev
+brew install libevent
+brew install libffi
+brew install libiconv
+brew install libpng
+brew install libpq
+brew install libsodium
+brew install libtool
+brew install libxml2
+brew install libzip
+brew install mackup
+brew install mas
+brew install mysql@5.7
+brew install nghttp2
+brew install nodebrew
+brew install openldap
+brew install openssl
+brew install pcre
+brew install php
+brew install phpmyadmin
+brew install python
+brew install python@2
+brew install readline
+brew install sqlite
+brew install unison
+brew install unixodbc
+brew install webp
+brew install xz
 
-## homebrew/dupes
-tap homebrew/dupes
-install zlib
+brew tap homebrew/apache
 
-## homebrew/php
-tap homebrew/php
-install composer
-install php56-xdebug
-install php56-mcrypt
-install php56 --homebrew-apxs
-install phpmyadmin
+brew tap homebrew/cask-versions
 
-## fomuras
-tap homebrew/versions
-tap homebrew/core
-tap homebrew/dupes
+brew tap homebrew/dupes
 
-## rcmdnk/file
-tap rcmdnk/file
-install brew-file
+brew tap homebrew/php
 
-# Other Homebrew packages
-install apr
-install apr-util
-install autoconf
-install c-ares
-install composer
-install freetype
-install gettext
-install git
-install icu4c
-install jpeg
-install libffi
-install libgcrypt
-install libgpg-error
-install libpng
-install libtasn1
-install libtool
-install libxml2
-install libyaml
-install mackup
-install mas
-install mcrypt
-install mhash
-install micro
-install mysql
-install nettle
-install nkf
-install node
-install openssl
-install pcre
-install pkg-config
-install putty
-install pyenv-virtualenv
-install python
-install readline
-install ruby
-install sqlite
-install unixodbc
-install xz
+brew tap homebrew/services
+
+brew tap homebrew/versions
+
+brew tap homebrew/cask
+brew cask install 1password
+brew cask install appcleaner
+brew cask install chromium
+brew cask install dropbox
+brew cask install gitkraken
+brew cask install java
+brew cask install phpstorm
+brew cask install skype
+brew cask install transmission
+brew cask install xquartz
+
+brew tap rcmdnk/file
+brew install brew-file
+
+# Other Cask applications
+brew cask install alfred
+brew cask install atom
+brew cask install docker
+brew cask install firefox
+brew cask install google-chrome
+brew cask install macdown
+brew cask install simplenote
+brew cask install the-unarchiver
+brew cask install vlc
 
 # App Store applications
-appstore Keynote
-appstore Numbers
-appstore Pages
-appstore Monosnap
-appstore Simplenote
-appstore Transmit
-appstore Twitter
-appstore VOX
-appstore LINE
-
+mas install 1091189122 Bear
+mas install 1024640650 CotEditor
+mas install 409183694 Keynote
+mas install 539883307 LINE
+mas install 409203825 Numbers
+mas install 409201541 Pages
+mas install 403388562 Transmit
+mas install 485812721 TweetDeck
+mas install 461369673 VOX
